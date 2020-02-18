@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ben Weber | Software Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/ico" href="img/logo_white.ico" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav justify-content-around align-items-center">
+                <a class="nav-item nav-link" href="home.html">About</a>
+                <a class="nav-item nav-link spacer" href="programming.html">Programming</a>
+                <img id="me" class="img-fluid" src="img/orange.png" alt="">
+                <a class="nav-item nav-link active" href="design.html">Graphic Design</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery">
+        <div class="entry-container d-flex mx-auto col-md-10 col-xl-8 flex-column flex-md-row">
+            <div class="image-wrap">
+                <img src="img/avole.png" alt="" class="entry-image m-auto">
+            </div>
+            <div class="entry-description text-center d-flex flex-column justify-content-center p-4">
+                <h1>Avole on the Ave</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quisquam corrupti enim laborum et! Perspiciatis
+                    ex quasi eveniet quam eligendi porro. Eaque optio quam quas culpa ipsa veritatis consequuntur! Delectus.</p>
+            </div>
+        </div>
+
+        <div class="entry-container d-flex mx-auto col-md-10 col-xl-8 flex-column flex-md-row">
+            <div class="image-wrap">
+                <img src="img/vizinet.png" alt="" class="entry-image m-auto">
+            </div>
+            <div class="entry-description text-center d-flex flex-column justify-content-center p-4">
+                <h1>Vizinet</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quisquam corrupti enim laborum et! Perspiciatis
+                    ex quasi eveniet quam eligendi porro. Eaque optio quam quas culpa ipsa veritatis consequuntur! Delectus.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    $('.nav-item.active').css('color', '#ef8354');
+</script>
+
+</html>

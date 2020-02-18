@@ -1,0 +1,47 @@
+@import 'vars';
+
+body {
+    background: $red;
+}
+
+#contact-form {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 5px;
+
+    input {
+        border: 0;
+        outline: none;
+        background: #eee;
+        padding: 10px 10px 10px 20px;
+        border-radius: 20px;
+
+        &[name='subject'] {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        &[name='body'] {
+            width: 100%;
+            height: 300px;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+    }
+
+    div { 
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: calc(50% - 10px);
+        }
+    }
+
+    @include lg-screen() {
+        width: 80%;
+    }
+}

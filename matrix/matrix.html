@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../js/p5.min.js"></script>
+    <!-- <script src="../js/p5.dom.js"></script> -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="matrix.js"></script>
+    <script src="Glyph.js"></script>
+    <script src="Stream.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <form id="controls" target="">
+        <div>
+            <input type="number" id="char-size" name="char-size" value=20>Character size (px)
+        </div>
+        <div>
+            <input type="number" name="min-speed" value=2>Min speed
+        </div>
+        <div>
+            <input type="number" name="max-speed" value=5>Max speed
+        </div>
+        <div>
+            <input type="color" name="color" value="#32ff95">Color
+        </div>
+        <div id="symbol-choice">
+            <input type="radio" name="char-type" value="matrix" checked>Use Matrix (Katakana) characters<br>
+            <input type="radio" name="char-type" value="random">Use random English words<br>
+        </div>
+        <div>
+            <input type="button" name="run-button" value="Run">
+        </div>
+    </form>
+    
+    <button id="controls-toggle">Show controls</button>
+</body>
+</html>

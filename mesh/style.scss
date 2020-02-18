@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap');
+@import '../css/vars';
+
+* {
+    box-sizing: border-box;
+}
+
+#controls {
+    background: rgba(#ccc, .9);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Red Hat Text';
+    color: #555;
+
+    #symbol-choice {
+        min-width: 300px;
+    }
+
+    div input {
+        margin: 10px;
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 60px;
+
+        &[name='run-button'] {
+            background: $green;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            transition: all .2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &[name="min-size"] {
+            margin-right: 5px;
+        }
+
+        &[name="max-size"] {
+            margin-left: 5px;
+        }
+    }
+}
+
+#controls-toggle {
+    display: none;
+    padding: 5px 30px;
+    background: rgba(#fff, .5);
+    transform: translateX(calc(50vw - 50%));
+    z-index: 100;
+    border-radius: 0 0 5px 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Red Hat Text';
+    color: #fff;
+}

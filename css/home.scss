@@ -1,0 +1,55 @@
+@import 'vars';
+
+body {
+    background: $green;
+}
+
+#hey {
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: bold;
+    // border: 100px solid red;
+}
+
+#intro {
+    background: darken($green, 20%);
+    padding: 1em;
+}
+
+#social {
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    width: 280px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(40px);
+
+    img {
+        height: 35px;
+        display: block;
+        transition: all .35s ease;
+        border-radius: 50%;
+
+        &:hover {
+            background: white;
+            opacity: 1;
+            border: 10px solid $green;
+            border-radius: 25px;
+            animation: pulse 1s ease;
+        }
+    }
+
+    #platform {
+        color: rgba(#fff, .4);
+        width: 60px;
+        border-radius: 5px;
+        transition: all .5s ease;
+    }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, .25) }
+  100% { box-shadow: 0 0 0 60px rgba(255, 255, 255, 0) }
+}

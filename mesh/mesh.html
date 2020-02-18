@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../js/p5.min.js"></script>
+    <script src="../js/p5.sound.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="mesh.js"></script>
+    <script src="Particle.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="controls" target="">
+        <div>
+            <input type="number" id="particle-count" name="particle-count" value=50>Particle count
+        </div>
+        <div>
+            <input type="number" name="range" value=1000>Attraction range (px)
+        </div>
+        <div>
+            <input type="number" name="attraction" value=5>Attraction force
+        </div>
+        <div>
+            <input type="number" name="repel" value=.5>Repel force
+        </div>
+        <div>
+            <input type="number" name="min-size" value=2>-
+            <input type="number" name="max-size" value=10>Particle size
+        </div>
+        <div>
+            <input type="number" name="max-speed" value=3>Max Speed
+        </div>
+        <!-- <div id="symbol-choice">
+            <input type="radio" name="char-type" value="matrix" checked>Use Matrix (Katakana) characters<br>
+            <input type="radio" name="char-type" value="random">Use random English words<br>
+        </div> -->
+        <div>
+            <input type="button" name="run-button" value="Run">
+        </div>
+    </form>
+
+    <button id="controls-toggle">Show controls</button>
+</body>
+
+</html>
