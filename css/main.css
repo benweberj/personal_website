@@ -6,6 +6,10 @@
   font-family: 'Raleway';
 }
 
+body {
+  margin-bottom: 100px;
+}
+
 .gallery .entry-container {
   margin-top: 80px;
   padding: 0;
